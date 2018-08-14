@@ -65,6 +65,7 @@ public class HR {
         {
             System.out.println(cv.details());
             handle(cv);
+            System.out.println("---------------");
         }
     }
 }
