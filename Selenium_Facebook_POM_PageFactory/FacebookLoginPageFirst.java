@@ -15,10 +15,12 @@ public class FacebookLoginPageFirst {
         PageFactory.initElements(factory, this);
     }
 
-    @FindBy (name = "email")
+    //@FindBy (name = "email")
+    @FindBy (xpath = "/html/body/div/div[2]/div/div/div/div/div[2]/form/table/tbody/tr[2]/td/input")
     private WebElement emailField;
 
-    @FindBy (id = "pass")
+    //@FindBy (id = "pass")
+    @FindBy (xpath = "/html/body/div/div[2]/div/div/div/div/div[2]/form/table/tbody/tr[2]/td[2]/input")
     private WebElement passField;
 
     @FindBy (name = "websubmit")
