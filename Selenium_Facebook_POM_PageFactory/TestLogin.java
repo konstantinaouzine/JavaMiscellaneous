@@ -37,7 +37,7 @@ public class TestLogin {
 
     @Test (priority = 1, dependsOnMethods = {"verifyLoginPageOpening"})
     public void verifySuccessfulLogin(){
-        facebookLoginPageFirst.performLogin("ayzink@gmail.com", "Gsdnv1987");
+        facebookLoginPageFirst.performLogin("test@gmail.com", "*******");
         facebookUserHomePage = new FacebookUserHomePage(driver);
         Assert.assertEquals(facebookUserHomePage.getNavigationLabel(), "Настройки аккаунта");
     }
