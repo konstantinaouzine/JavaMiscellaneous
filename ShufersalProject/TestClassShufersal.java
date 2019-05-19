@@ -48,6 +48,6 @@ public class TestClassShufersal {
         americanOutletsPage = new AmericanOutletsPage(driver);
         americanOutletsPage.goToAdidasShoes();
         americanOutletsPage.filterAdidasShoesByTypeAndColor();
-        americanOutletsPage.purchaseShowsAndComparePrices();
+        americanOutletsPage.purchaseShoesAndComparePrices();
     }
 }
