@@ -102,7 +102,7 @@ public class TestClassShufersal {
         americanOutletsPage = new AmericanOutletsPage(driver);
         americanOutletsPage.goToAdidasShoes();
         americanOutletsPage.filterAdidasShoesByTypeAndColor();
-        americanOutletsPage.purchaseShowsAndComparePrices();
+        americanOutletsPage.purchaseShoesAndComparePrices();
     }
 >>>>>>> e3a171b99660a989c65076a4210821a72bfad195
 }

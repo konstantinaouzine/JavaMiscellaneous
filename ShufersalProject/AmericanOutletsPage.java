@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package ShufersalProject;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -241,13 +240,13 @@ public class AmericanOutletsPage {
         submitButtonInColorSelection.click();
         System.out.println("Submit button pressed");
 
-        boolean areShowsShown = adidasSpecificShoes.isDisplayed();
-        if (!areShowsShown)
-            Assert.assertTrue(false, "Specific shows not displayed");
+        boolean areShoesShown = adidasSpecificShoes.isDisplayed();
+        if (!areShoesShown)
+            Assert.assertTrue(false, "Specific shoes not displayed");
 
     }
 
-    public void purchaseShowsAndComparePrices(){
+    public void purchaseShoesAndComparePrices(){
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", adidasSpecificShoes);
         ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, -450);");
 
@@ -256,7 +255,7 @@ public class AmericanOutletsPage {
 
         String priceInGalleryAsString = lookForPrice.getAttribute("data-price-amount");
         Double priceInGallery = Double.valueOf(priceInGalleryAsString);
-        System.out.println("Price of shows in gallery: " + priceInGallery);
+        System.out.println("Price of shoes in gallery: " + priceInGallery);
 
         addToCartButton.click();
         //not found other way to click properly on cart button
@@ -269,9 +268,8 @@ public class AmericanOutletsPage {
         System.out.println("Cart opened");
         String[] priceArr = elementInCart.getText().split(" ");
         double priceInCart = Double.valueOf(priceArr[0]);
-        System.out.println("Price of shows in cart: " + priceInCart);
+        System.out.println("Price of shoes in cart: " + priceInCart);
         Assert.assertTrue(priceInGallery==priceInCart);
     }
 
 }
->>>>>>> e3a171b99660a989c65076a4210821a72bfad195
